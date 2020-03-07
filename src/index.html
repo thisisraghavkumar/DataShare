@@ -19,38 +19,43 @@
 
 </head>
 <body>
-  <div class='container-fluid pt-3 border bg-dark text-white' id="title-container">
-    <h1>This is a full width container div.</h1>
-    <p>Created by - Raghav</p>
+  <div id='before-load'>
+    <p>Wait while web3 loads</p>
   </div>
-  <div class='container bg-light'>
-    This is another container.
-  </div>
+  <div id='after-load'>
+    <div class='container-fluid pt-3 border bg-dark text-white' id="title-container">
+      <h1>This is a full width container div.</h1>
+      <p>Created by - Raghav</p>
+    </div>
+    <div class='container bg-light'>
+      This is another container.
+    </div>
 
-  <div class='container bg-white'>
-    <div class='row border border-secondary'>
-      <div class='col-sm-4 border-right border-secondary' id='profile' style="padding: 5px">
-        <h2>Profile</h2>
-        <div style="padding: 3px">
-          <div class="border">Image</div>
-          <div class="border" id="details">Details</div>
+    <div class='container bg-white'>
+      <div class='row border border-secondary'>
+        <div class='col-sm-4 border-right border-secondary' id='profile' style="padding: 5px">
+          <h2>Profile</h2>
+          <div style="padding: 3px">
+            <div class="border">Image</div>
+            <div class="border" id="details">Details</div>
+          </div>
+        </div>
+        <div class='col-sm-8' id='friends'>
+          <h2>Friends</h2>
+          <div class="border" id='friendlist' style="overflow: scroll;height: 200px">List</div>
         </div>
       </div>
-      <div class='col-sm-8' id='friends'>
-        <h2>Friends</h2>
-        <div class="border" id='friendlist' style="overflow: scroll;height: 200px">List</div>
+      <div class='row border border-secondary'>
+        <dir class='col-sm-6' id='uploaded-files'>
+          <h2>Files Uploaded</h2>
+          <div class="border" id='uploaded-filelist' style="overflow: scroll; height: 400px">List</div>
+        </dir>
+        <dir class='col-sm-6' id='downloaded-files'>
+          <h2>Files Downloaded</h2>
+          <div class="border" id='downloaded-filelist' style="overflow: scroll; height: 400px">List</div>
+        </dir>
       </div>
     </div>
-    <div class='row border border-secondary'>
-      <dir class='col-sm-6' id='uploaded-files'>
-        <h2>Files Uploaded</h2>
-        <div class="border" id='uploaded-filelist' style="overflow: scroll; height: 400px">List</div>
-      </dir>
-      <dir class='col-sm-6' id='downloaded-files'>
-        <h2>Files Downloaded</h2>
-        <div class="border" id='downloaded-filelist' style="overflow: scroll; height: 400px">List</div>
-      </dir>
-    </div>
-  </div>
+</div>
 </body>
 </html>
